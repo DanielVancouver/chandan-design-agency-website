@@ -1,0 +1,41 @@
+@import url('tablet.css');
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .hero-content, .hero-image {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .brand-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 5%;
+    }
+
+    .brand-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
