@@ -262,9 +262,10 @@ footer {
 
 .cta-button.secondary:hover {
     background-color: #4169e1;
-    color: #fff;}
+    color: #fff;
+}
 
-/* Responsive design */
+
 @media (max-width: 1024px) {
     .hero, .brand-content, .contact-container {
         flex-direction: column;
@@ -289,20 +290,6 @@ footer {
     .contact-container {
         flex-direction: column;
     }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    h3 {
-        font-size: 1.25rem;
-    }
 
     .services {
         padding: 2rem 5%;
@@ -315,11 +302,6 @@ footer {
     .client-image {
         width: 100%;
         height: auto;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
     }
 
     .contact-info, .contact-form {
@@ -338,7 +320,20 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
     .hero {
         flex-direction: column;
         padding: 5%;
@@ -347,6 +342,17 @@ footer {
     .hero-content, .hero-image {
         max-width: 100%;
         margin: 0;
+    }
+
+    .brand-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 5%;
     }
 
     .brand-content {
